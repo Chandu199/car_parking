@@ -20,7 +20,6 @@ class ParkingActions
     slot[:car_id] = car.car_number
     slot[:car_color] = car.car_color
     slot[:empty] = false
-    p slot
   end
 
   def status
@@ -28,7 +27,9 @@ class ParkingActions
     headings.each do |heading|
       print "#{heading.to_s.gsub("_", " ").capitalize} \t"
     end
+
     puts "\n ----------------------------------------------------------"
+
     values = @slots.map(&:values)
     values.each do |subvalues|
       subvalues.each do |value|
@@ -36,6 +37,7 @@ class ParkingActions
       end
       puts "\n ----------------------------------------------------------"
     end
+
   end
 
   def leave slot_id
