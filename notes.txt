@@ -1,0 +1,32 @@
+1. Should read the file and command line argument
+2. Should create parking lot with number of slots
+3. Should take input of car number and color
+4. Should destroy the slot once the car is left out
+5. Should show lis of all cars parked in the slot.
+6. Should search cars based on number and color
+---------------------------------------------
+
+Models
+---------
+Parking model
+Car model
+
+Controllers
+-----------
+parking controller Actions
+
+Model attributes
+--------------
+1. Parking Model - number_of slots => [{ slot_id, car_id, empty }]
+
+2. Car attributes -> Car Number and Color
+
+Controller Actions
+--------------
+1. Index action -> To show list of cars
+2. Show action -> To show a particular car -> Color and number
+3. Create Action -> To allot a parking space
+4. Destroy Action -> To remove the car from space
+
+
+
